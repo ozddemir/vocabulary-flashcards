@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXToggleNode?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="384.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flash.ui.card.learn.Controller">
+	<children>
+      <VBox prefHeight="350.0" prefWidth="280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="311.0" prefWidth="220.0" styleClass="cardStyle">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="150.0">
+                     <children>
+                        <JFXCheckBox fx:id="isLearned" prefHeight="21.0" prefWidth="20.0" text=" " textAlignment="CENTER" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="252.0" prefWidth="220.0">
+                     <children>
+                        <Text fx:id="frontFace" fill="#ecf0f1" strokeType="OUTSIDE" strokeWidth="0.0" text="Start!" textAlignment="CENTER" wrappingWidth="219.13671875">
+                           <HBox.margin>
+                              <Insets top="60.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                          </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="306.0" prefHeight="0.0" prefWidth="240.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <children>
+                  <JFXToggleNode fx:id="flipCard" prefHeight="25.0" prefWidth="134.0" text="FLIP CARD" textAlignment="CENTER" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </JFXToggleNode>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="39.0" prefWidth="260.0">
+               <children>
+                  <JFXButton onAction="#previousItem" prefHeight="50.0" prefWidth="130.0" text="PREVIOUS" />
+                  <JFXButton onAction="#nextItem" prefHeight="50.0" prefWidth="130.0" text="NEXT" />
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

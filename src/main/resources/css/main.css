@@ -1,0 +1,26 @@
+.root{
+	-fx-font-size:1.25em;
+	
+}
+
+.jfx-toggle-button {
+     -jfx-toggle-color:  #D84315;
+     -jfx-untoggle-color:  #4A148C;
+     -jfx-toggle-line-color: #5C6BC0;
+     -jfx-untoggle-line-color:  #5C6BC0;
+     -jfx-size: 10.0;
+     -jfx-disable-visual-focus: false;
+}
+
+.button{
+	-fx-background-color: #263238;
+	-fx-background-radius: 0.0;
+	-fx-text-fill: #E0E0E0;
+}
+.button:hover{
+	
+   	-fx-effect: innershadow(one-pass-box, rgba(0.0,0.0,0.0,0.8), 7.0, 0.0, 0.0, 0.0);
+   }
+  .edge{
+	-fx-background-color: #D84315;
+}

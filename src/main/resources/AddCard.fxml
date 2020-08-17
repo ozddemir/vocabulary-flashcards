@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="330.0" prefWidth="247.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flash.ui.addcard.AddCardController">
+	 <children>
+      <VBox prefHeight="270.0" prefWidth="287.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="288.0" prefWidth="247.0">
+               <children>
+                  <VBox prefHeight="292.0" prefWidth="240.0">
+                     <children>
+                        <JFXTextField fx:id="firstWord" labelFloat="true" prefHeight="31.0" prefWidth="210.0" promptText="Type the word you want to learn" styleClass="second-word">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="25.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="secondWord" labelFloat="true" promptText="Type the meaning" styleClass="second-word">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="18.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextArea fx:id="expoWord" labelFloat="true" prefHeight="72.0" prefWidth="210.0" promptText="Expo.." styleClass="second-word">
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" top="18.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextArea>
+                        <JFXComboBox fx:id="levelBox" labelFloat="true" prefHeight="43.0" prefWidth="210.0" promptText="Chose level">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="18.0" />
+                           </VBox.margin>
+                        </JFXComboBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="247.0">
+               <children>
+                  <JFXButton onAction="#saveCard" prefHeight="46.0" prefWidth="135.0" text="Save">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></JFXButton>
+                  <JFXButton layoutX="84.0" layoutY="13.0" onAction="#cancelCard" prefHeight="48.0" prefWidth="114.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

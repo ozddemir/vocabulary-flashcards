@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="364.0" prefWidth="468.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="flash.ui.list.ListController">
+	<children>
+		<TableView fx:id="tableView" layoutX="79.0" layoutY="77.0" prefHeight="364.0" prefWidth="460.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<columns>
+				<TableColumn fx:id="level" prefWidth="101.0" text="Level" />
+				<TableColumn fx:id="wordCol" prefWidth="157.0" text="Word" />
+				<TableColumn fx:id="definationCol" prefWidth="194.0" text="Defination" />
+			</columns>
+		</TableView>
+	</children>
+</AnchorPane>
